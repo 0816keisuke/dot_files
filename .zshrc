@@ -11,6 +11,7 @@ export PS1="%~ $ "
 
 # エイリアスの作成
 alias ls="exa -F"
+alias la="exa -aF"
 alias ll="exa -hlF --git"
 alias lla="exa -ahlF --git"
 alias lt="exa -T"

@@ -8,6 +8,19 @@ on_ft = ['typescript']
 repo = 'Shougo/neocomplete.vim'
 on_i = 1
 
+# ファイルのツリー表示
+[[plugins]]
+repo = 'preservim/nerdtree'
+hook_add='''
+  let g:NERDTreeShowHidden=1
+  let g:NERDTreeIgnore=['\.git$', '\.clean$', '\.swp$', '\.bak$', '\~$']
+  let g:NERDTreeQuitOnOpen=1
+  let g:NERDTreeWinSize=30
+  nnoremap <C-t> :NERDTreeToggle
+  nmap <C-h> <Plug>AirlineSelectPrevTab
+  nmap <C-l> <Plug>AirlineSelectNextTab
+'''
+
 [[plugins]]
 repo   = 'Shougo/unite.vim'
 

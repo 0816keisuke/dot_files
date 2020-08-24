@@ -122,17 +122,6 @@ set smartcase
 " 検索結果をハイライト
 set hlsearch
 nnoremap <F3> :noh<CR>
-" 大文字小文字を区別しない
-set ignorecase
-
-" 検索文字に大文字がある場合は大文字小文字を区別
-set smartcase
 
 " ヤンクした時にクリップボードにコピーする
 set clipboard=unnamed,autoselect
-
-" キーマッピング
-" ファイルツリーの表示
-nnoremap :tree :NERDTreeToggle
-nmap <C-h> <Plug>AirlineSelectPrevTab
-nmap <C-l> <Plug>AirlineSelectNextTab
